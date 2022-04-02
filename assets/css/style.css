@@ -1,0 +1,4088 @@
+@import url("https://fonts.googleapis.com/css2?family=Krub:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --fontFamily: 'Krub', sans-serif;
+  --fontFamily2: 'Roboto', sans-serif;
+  --mainColor: #e70d3d;
+  --backgroundColor: #ebebeb;
+  --transparentColor: #fcebe5;
+  --whiteColor: #ffffff;
+  --blackColor: #111111;
+  --paragraphColor: #777777;
+  --fontSize: 16px;
+  --card-title-fontSize: 24px;
+  --transition: 0.5s;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #f7f7f7;
+}
+.owl-prev .fas .fa-chevron-left {
+  color: #253897;
+}
+h1, h2, h3, h4 {
+  font-family: var(--fontFamily);
+}
+
+h5, h6 {
+  font-family: var(--fontFamily2);
+}
+
+a {
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  color: var(--blackColor);
+  text-decoration: none;
+  outline: 0 !important;
+}
+
+a:hover {
+  color: #273796;
+  text-decoration: none;
+}
+
+:focus {
+  outline: 0 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  color: var(--paragraphColor);
+  font-size: var(--fontSize);
+  margin-bottom: 15px;
+  line-height: 1.8;
+  font-family: var(--fontFamily2);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.ptb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.ptb-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.pt-30 {
+  padding-top: 0px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--whiteColor) !important;
+  z-index: 99999;
+  padding: 0px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+          animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+.bg-fdfdfd {
+  background-image: url('../images/event-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.blog-card img {
+  height: 178px;
+}
+.notice-section {
+    justify-content: space-between;
+    background: white;
+    padding: 17px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.notice-section .about-text-area.p-4 {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 50%);
+}
+.notice-section .about-text-area p {
+  font-size: 12px;
+}
+/*================================================
+Default button Area CSS
+=================================================*/
+.default-button {
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 22px;
+  color: var(--whiteColor);
+  background-color: #273796;
+  font-weight: 600;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily);
+}
+
+.video-card h4 {
+  font-size: 16px!important;
+}
+
+.default-button i {
+  margin-left: 3px;
+}
+
+.default-button:hover {
+  color: var(--whiteColor);
+  background-color: var(--blackColor);
+  -webkit-box-shadow: 0px 5px 5px -5px #273796;
+          box-shadow: 0px 5px 5px -5px #273796;
+}
+
+.default-button2 {
+  border-radius: 5px;
+  color: var(--blackColor);
+  background-color: transparent;
+  border: 1px solid #273796;
+}
+
+.default-button2:hover {
+  background-color: #273796;
+}
+
+/*================================================
+Topbar Area CSS
+=================================================*/
+.topbar {
+  border-bottom: 1px solid #eeeeee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.topbar ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.topbar-left-area ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.topbar-left-area ul li i {
+  margin-right: 2px;
+  color: #273796;
+}
+
+.topbar-left-area ul li span, .topbar-left-area ul li a {
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+  color: var(--paragraphColor);
+}
+
+.topbar-right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.topbar-social-icons ul li {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.topbar-social-icons ul li a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--blackColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: var(--backgroundColor);
+}
+
+.topbar-social-icons ul li a:hover {
+  color: var(--whiteColor);
+  background-color: #273796;
+}
+
+.language-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.language-select img {
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.menu-sidebar .m-search-box {
+  max-width: 250px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px !important;
+  background-color: var(--whiteColor);
+}
+
+.menu-sidebar .m-search-box .form-control {
+  border: 0px solid transparent;
+  border-radius: 10px !important;
+  background-color: var(--whiteColor);
+}
+
+.menu-sidebar .m-search-box .btn {
+  z-index: 9;
+  max-height: 40px;
+  color: var(--whiteColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  border-radius: 5px;
+  background-color: #273796;
+}
+
+.menu-sidebar .m-search-box .btn i {
+  line-height: 1.5;
+}
+
+.menu-sidebar .m-search-box .btn i::before {
+  font-size: 18px;
+  font-weight: 600 !important;
+}
+
+.menu-sidebar .m-search-box .btn:hover {
+  color: var(--whiteColor);
+  background-color: #273796;
+}
+
+.language-select {
+  width: 80px;
+  margin-left: 10px;
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.language-select i {
+  margin-right: 7px;
+}
+
+.language-select .nice-select {
+  background-color: transparent;
+  border-radius: 0;
+  border: none !important;
+  font-size: 14px;
+  font-weight: 400;
+  height: auto;
+  line-height: initial;
+  color: var(--blackColor);
+  padding-left: 0;
+  padding-right: 30px;
+  position: relative;
+  top: 0px;
+  font-weight: 500;
+}
+
+.language-select .nice-select::after {
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+  right: 17px;
+  height: 7px;
+  width: 7px;
+}
+
+.language-select .nice-select .list {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 0;
+  width: 100%;
+  height: 150px;
+  overflow-y: scroll;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #000000;
+  z-index: 9999;
+}
+
+.language-select .nice-select .list::-webkit-scrollbar {
+  display: none;
+}
+
+.language-select .nice-select .list .option.selected {
+  background-color: #273796 !important;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.language-select .nice-select .list .option {
+  text-align: center;
+  padding: 0px;
+}
+
+.language-select .nice-select ul {
+  display: block;
+}
+
+.language-select .nice-select ul li {
+  display: block;
+  margin-left: 0px !important;
+  margin: 0px;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  background-color: #0089D1;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #2B3393;
+}
+html {
+  overflow-x: hidden;
+}
+/*================================================
+Navbar Area CSS
+=================================================*/
+
+.top-border {
+    background: #0089D1;
+    height: 3px;
+    width: 100%;
+}
+
+.top-border samp {
+  background: #273896;
+  height: 3px;
+  width: 40%;
+  display: block;
+}
+
+.navbar-area img {
+  width: 120px;
+}
+a.meanmenu-reveal {
+  display: none;
+}
+
+.mean-container .mean-bar {
+  float: left;
+  width: 100%;
+  position: absolute;
+  background: transparent;
+  padding: 20px 0 0;
+  z-index: 999;
+  height: 70px;
+  text-transform: capitalize;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.mean-container .mean-bar * {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.mean-container a.meanmenu-reveal {
+  width: 35px;
+  height: 30px;
+  padding: 12px 15px 0 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #0089D1;
+  text-decoration: none;
+  font-size: 16px;
+  text-indent: -9999em;
+  line-height: 22px;
+  font-size: 1px;
+  display: block;
+  font-weight: 700;
+}
+
+.mean-container a.meanmenu-reveal span {
+  display: block;
+  background: #0089D1;
+  height: 4px;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+
+.mean-container .mean-nav {
+  float: left;
+  width: 100%;
+  background: var(--whiteColor);
+  margin-top: 77px;
+}
+
+.mean-container .mean-nav ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border: none;
+  list-style-type: none;
+}
+
+.mean-container .mean-nav ul li {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.mean-container .mean-nav ul li a {
+  display: block;
+  float: left;
+  width: 90%;
+  padding: 1em 5%;
+  margin: 0;
+  text-align: left;
+  color: #677294;
+  border-top: 1px solid #dbeefd;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.mean-container .mean-nav ul li a:hover {
+  background: var(--whiteColor);
+}
+
+.mean-container .mean-nav ul li a.active {
+  color: var(--whiteColor);
+}
+
+.mean-container .mean-nav ul li li a {
+  width: 80%;
+  padding: 1em 10%;
+  color: #677294;
+  border-top: 1px solid #dbeefd;
+  opacity: 1;
+  filter: alpha(opacity=75);
+  text-shadow: none !important;
+  visibility: visible;
+  text-transform: none;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.mean-container .mean-nav ul li li li a {
+  width: 70%;
+  padding: 1em 15%;
+}
+
+.mean-container .mean-nav ul li li li li a {
+  width: 60%;
+  padding: 1em 20%;
+}
+
+.mean-container .mean-nav ul li li li li li a {
+  width: 50%;
+  padding: 1em 25%;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+  margin-top: 3px;
+  width: 100%;
+  height: 24px;
+  padding: 12px !important;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  font-weight: 700;
+  background: transparent !important;
+  border: none !important;
+}
+
+.mean-container .mean-nav ul li.mean-last a {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.mean-container .mean-nav .navbar-nav {
+  overflow-y: scroll;
+  height: 340px;
+}
+
+.mean-container .mean-push {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+.mean-nav .wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.mean-nav .dropdown-toggle::after {
+  display: none;
+}
+
+.mean-remove {
+  display: none !important;
+}
+
+.mobile-nav {
+  display: none;
+  position: relative;
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
+}
+
+.btn-primary,
+.btn-primary:active {
+  background-color: var(--whiteColor) !important;
+  color: var(--blackColor) !important;
+  border-color: var(--blackColor) !important;
+}
+
+.mobile-nav.mean-container .mean-nav ul li a.active {
+  color:#0089D1;
+}
+
+/* Fix for box sizing on Foundation Framework etc. */
+.main-nav {
+  background-color: transparent;
+}
+
+.main-nav nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.main-nav nav .navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-nav nav .navbar-nav .nav-item {
+  position: relative;
+  padding: 15px 0;
+}
+
+.main-nav nav .navbar-nav .nav-item a {
+  padding: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+  color: #404040;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.main-nav nav .navbar-nav .nav-item a i {
+  right: 0;
+  top: 6px;
+  font-size: 12px;
+  position: absolute;
+}
+
+.main-nav nav .navbar-nav .nav-item a:hover {
+  color: #0089D1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-nav nav .navbar-nav .nav-item a::after {
+  display: none;
+}
+
+.main-nav nav .navbar-nav .nav-item a.dropdown-toggle {
+  padding-right: 13px;
+}
+
+.main-nav nav .navbar-nav .nav-item a.active {
+  color: #0089D1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-nav nav .navbar-nav .nav-item:hover a {
+  color: #0089D1;
+}
+
+.main-nav nav .navbar-nav .nav-item:hover ul {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  visibility: visible;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu {
+  left: 0;
+  top: 65px;
+  opacity: 0;
+  z-index: 99;
+  width: 200px;
+  border: none;
+  display: block;
+  border-radius: 0px;
+  visibility: hidden;
+  position: absolute;
+  -webkit-transform: rotateX(-20deg);
+          transform: rotateX(-20deg);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  background: var(--whiteColor);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li {
+  position: relative;
+  padding: 0;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a {
+  margin: 0;
+  display: block;
+  padding: 7px 15px;
+  color: var(--blackColor);
+  border-bottom: 1px dashed transparent;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a i {
+  top: 50%;
+  position: absolute;
+  right: 10px !important;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a::before {
+  content: '';
+  width: 0;
+  height: 100%;
+  background-color:#0089D1;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 99;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover, .main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active {
+  color: #0089D1;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover::before, .main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active::before {
+  width: 2px;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+  position: absolute;
+  left: 101%;
+  top: 0;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu {
+  top: 20px;
+  left: 100%;
+  position: absolute;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
+  color: var(--blackColor);
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
+  color: #0089D1;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  top: -5px !important;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu li:hover .dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  top: -5px !important;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover a {
+  color: #0089D1;
+}
+
+.main-nav nav .navbar-nav .nav-item:last-child .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+.navbar-light .navbar-brand {
+  color: #0089D1;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #0089D1;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mean-container .mean-bar {
+  position: relative;
+}
+
+.mobile-nav .menu-sidebar-small-device {
+  display: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  position: absolute;
+  top: 15px;
+  right: 47px;
+}
+
+.mobile-nav .menu-sidebar-small-device .uni-button {
+  padding: 5px 10px;
+}
+
+.mobile-nav .call-button {
+  top: 7px;
+}
+
+.header-area {
+  position: relative;
+}
+
+.menu-small-device {
+  display: none;
+  position: absolute;
+  right: 80px;
+  top: 14px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.menu-small-device li {
+  list-style: none;
+  display: inline-block;
+}
+
+.header-area2 .main-nav nav .navbar-nav .nav-item .dropdown-menu {
+  top: 69px;
+}
+
+/*================================================
+Header Responsive Area CSS
+=================================================*/
+@media only screen and (max-width: 767px) {
+  .topbar-left-area ul li {
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .topbar {
+    text-align: center;
+  }
+  .topbar .topbar-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .topbar .topbar-right-area {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .topbar .topbar-right-area ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .language-select {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .main-nav nav .navbar-nav .nav-item a {
+    font-size: 14px;
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .main-responsive-nav {
+    background-color: #ffffff;
+    height: 78px;
+  }
+  .mobile-nav {
+    display: block;
+    position: relative;
+  }
+  .mobile-nav .logo {
+    top: 14px;
+    left: 0px;
+    z-index: 999;
+    position: absolute;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .mobile-nav nav .navbar-nav .nav-item a i {
+    display: none;
+  }
+  .mean-container .mean-bar {
+    background-color: #ffffff;
+    padding: 0;
+  }
+  .mean-container a.meanmenu-reveal {
+    padding: 10px 2px 0 0;
+  }
+  .main-nav {
+    display: none !important;
+  }
+  .menu-sidebar {
+    display: none;
+  }
+  .menu-small-device {
+    z-index: 999;
+    right: 55px;
+    top: 24px;
+    display: block !important;
+  }
+  .menu-small-device .default-button {
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+  .topbar-left-area {
+    text-align: center;
+  }
+  .topbar-left-area ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+  }
+  .topbar-right-side {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/*================================================
+Index 01 Footer Area CSS
+=================================================*/
+.footer-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/footer-bg.jpg");
+}
+
+.footer-logo-area p {
+  color: #cccccc;
+  margin-top: 15px;
+  margin-bottom: 12px;
+}
+
+.footer-logo-area .logo-contact {
+  position: relative;
+  padding-left: 55px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-logo-area .logo-contact i {
+  position: absolute;
+  left: 0;
+  font-size: 45px;
+  color: #273796;
+}
+
+.footer-logo-area .logo-contact h6 {
+  margin-bottom: 0px;
+  color: var(--whiteColor);
+  font-size: 18px;
+}
+
+.footer-logo-area .logo-contact p {
+  margin: 0px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.footer-logo-area .logo-contact p a {
+  color: #273796;
+}
+
+.footer-links h3 {
+  color: var(--whiteColor);
+  margin-bottom: 30px;
+  font-size: var(--card-title-fontSize);
+  font-weight: 600;
+}
+
+.footer-links ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.footer-links ul li {
+  margin-top: 10px;
+  padding-left: 20px;
+  position: relative;
+  font-size: var(--fontSize);
+}
+
+.footer-links ul li a {
+  color: var(--whiteColor);
+}
+
+.footer-links ul li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-box-shadow: 0px 0px 0px 3px #ccccccd5;
+          box-shadow: 0px 0px 0px 3px #ccccccd5;
+  border: 2px solid var(--blackColor);
+  background-color: #ccccccd8;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+.footer-links ul li:hover a {
+  color: #273796;
+}
+
+.footer-service {
+  padding-left: 30px;
+}
+
+.footer-company {
+  padding-left: 20px;
+}
+
+.footer-card {
+  position: relative;
+  padding-left: 65px;
+  margin-top: 20px;
+}
+
+.footer-card i {
+  font-size: 45px;
+  color: #273796;
+  position: absolute;
+  left: 0;
+}
+
+.footer-card h6 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #cccccc;
+  margin-bottom: 0px;
+}
+
+.footer-card p {
+  color: var(--whiteColor);
+  font-size: 18px;
+  margin: 0px;
+}
+
+.footer-card p a {
+  color: var(--whiteColor);
+}
+
+/*================================================ 
+CopyRight Area CSS
+=================================================*/
+.copyright {
+  text-align: center;
+  color: var(--whiteColor);
+  background-color: transparent;
+  border-top: 1px solid #eeeeee1e;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.copyright p {
+  color: var(--whiteColor);
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.copyright p a {
+  text-decoration: none;
+  color: #273796;
+}
+
+/*================================================
+Go Top CSS
+=================================================*/
+.go-top {
+  position: fixed;
+  cursor: pointer;
+  bottom: 100px;
+  right: 20px;
+  border-radius: 5px;
+  background-color: #273796;
+  color: #ffffff;
+  z-index: 99;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 25px;
+  -webkit-transition: var(--transition);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.go-top i {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.go-top:hover {
+  color: #ffffff;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  background-color: #273796;
+  border: 1px solid #273796;
+}
+
+.go-top.active {
+  opacity: 1;
+  visibility: visible;
+  bottom: 20px;
+  -webkit-animation: top-bottom 3s infinite linear;
+          animation: top-bottom 3s infinite linear;
+}
+
+/*================================================
+Index 01 Banner Area CSS
+=================================================*/
+@media only screen and (max-width: 767px) {
+  .footer-links {
+    margin-top: 30px;
+    padding-left: 0px;
+  }
+  .footer-card p {
+    font-size: 16px;
+  }
+  .footer-card h6 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-links {
+    margin-top: 30px;
+    padding-left: 0px;
+  }
+  .footer-service {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .footer-contact {
+    margin-top: 30px;
+    margin-bottom: -10px;
+  }
+}
+
+/*================================================
+Default Section Title Area CSS
+=================================================*/
+.default-section-title h6 {
+  color: #273796;
+  font-size: var(--fontSize);
+  font-weight: 600;
+}
+
+.default-section-title h3 {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.service-card h4 a {
+  color: black;
+}
+
+.default-section-title-middle {
+  max-width: 850px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.default-section-title-middle h3 {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-content {
+  margin-top: 20px;
+}
+
+/*================================================
+Index 01 Banner Area CSS
+=================================================*/
+.slider-part .slider {
+  padding-right:0!important;
+}
+.slider-part .side-part {
+  padding-left:0!important;
+}
+.key-specials-persons {
+  background-color: #233342;
+  background-size: cover;
+  padding: 15px 20px;
+}
+.biography-area {
+  padding-bottom: 30px;
+}
+.biography-img {
+  display: inline-block;
+  margin-right: 20px;
+}
+.biography-img img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  padding: 2px;
+  background: #fff;
+}
+.biography-content {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+}
+.biography-content h4 {
+  display: block;
+  color: #fff;
+  margin-bottom: 5px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.biography-content h4 a {
+  color: white;
+}
+.biography-content p {
+  color: white;
+}
+.biography-content a {
+  color: #008AD1;
+}
+.main-banner-single-slider {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/banner/slider_5f9a9437d6528.jpg");
+}
+
+.main-banner-single-slider::before {
+  content: '';
+  height: 100%;
+  width: 60%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#000000ee), color-stop(#000000dd), color-stop(#000000cc), to(#ffffff00));
+  background-image: linear-gradient(to right, #000000ee, #000000dd, #000000cc, #ffffff00);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.main-banner-single-slider .banner-text-area {
+  position: relative;
+  padding-top: 343px;
+  /* padding-bottom: 50px; */
+}
+
+.main-banner-single-slider .banner-text-area h6 {
+  color: var(--whiteColor);
+  font-size: 16px;
+}
+
+.main-banner-single-slider .banner-text-area h1 {
+  color: var(--whiteColor);
+  font-size: 44px;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 50px;
+}
+
+.main-banner-single-slider .banner-text-area p {
+  font-size: var(--fontSize);
+  color: #eeeeee;
+}
+
+.main-banner-single-slider .banner-text-area .default-button {
+  margin-top: 15px;
+  border: 1px solid #eeeeee00;
+}
+
+.main-banner-single-slider .banner-text-area .default-button:hover {
+  border: 1px solid #eeeeee83;
+  background-color: transparent;
+}
+
+.mbs-2 {
+  background-image: url("../images/banner/slider_5f9a9392b801e.jpg");
+}
+
+.mbs-3 {
+  background-image: url("../images/banner/slider_5f9a9437d6528.jpg");
+}
+.mbs-4 {
+  background-image: url("../images/banner/slider_5fd88ad2325e2.jpg");
+}
+
+.main-banner {
+  position: relative;
+}
+
+.main-banner .owl-nav {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main-banner .owl-nav button {
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+  display: block;
+  border-radius: 50%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: #2A3394 !important;
+  background-color: var(--whiteColor) !important;
+}
+
+.main-banner .owl-nav button:hover {
+  color: var(--whiteColor) !important;
+  background-color: #2A3394 !important;
+}
+
+.main-banner .owl-item.active .banner-text-area h6 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.main-banner .owl-item.active .banner-text-area h1 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.main-banner .owl-item.active .banner-text-area p {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+.main-banner .owl-item.active .banner-text-area .default-button {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+/*================================================
+Index 01 About Area CSS
+=================================================*/
+.about-img-area {
+  position: relative;
+}
+
+.about-img-area .exp-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-img-area .about-footer-img {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+.about-card {
+  padding-left: 90px;
+  margin-top: 25px;
+  position: relative;
+}
+
+.about-card i {
+  width: 70px;
+  height: 70px;
+  font-size: 35px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eeeeee;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  position: absolute;
+  left: 0;
+}
+
+.about-card i::before {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: var(--blackColor);
+}
+
+.about-card h4 {
+  margin-bottom: 10px;
+  font-size: var(--card-title-fontSize);
+  font-weight: 600;
+}
+
+.about-card:hover i {
+  background-color: #273796;
+}
+
+.about-card:hover i::before {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  color: var(--whiteColor);
+}
+
+/*================================================
+Index 01 Service Area CSS
+=================================================*/
+.service-card {
+  padding: 30px;
+  margin: 30px 5px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-box-shadow: 0px 0px 20px -5px #eeeeee;
+          box-shadow: 0px 0px 20px -5px #eeeeee;
+  background-color: white;
+}
+
+.service-card .service-card-icon {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card .service-card-icon i {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  position: relative;
+  z-index: 9;
+  font-size: 40px;
+}
+
+.service-card .service-card-icon img {
+  /* position: absolute; */
+  left: 0;
+  top: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.service-card .service-card-icon .default-img {
+  visibility: visible;
+}
+
+.service-card .service-card-icon .hover-img {
+  visibility: hidden;
+  left: -100%;
+}
+
+.service-card h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.service-card .default-button {
+  margin-top: 10px;
+}
+
+.service-card:hover {
+  -webkit-box-shadow: 0px 10px 10px -5px #dadada;
+          box-shadow: 0px 10px 10px -5px #dadada;
+}
+
+.service-card:hover .service-card-icon i {
+  color: var(--whiteColor);
+}
+
+.service-card:hover .service-card-icon .default-img {
+  visibility: hidden;
+}
+
+.service-card:hover .service-card-icon .hover-img {
+  z-index: 5;
+  left: 0;
+  visibility: visible;
+}
+
+.service-slider-area .owl-dots {
+  text-align: center;
+}
+
+.service-slider-area .owl-dots .owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0px 5px;
+  background-color: #c9c9c9 !important;
+}
+
+.service-slider-area .owl-dots .active {
+  background-color: #273796 !important;
+}
+
+/*================================================
+Index 01 Why Choose Us Area CSS
+=================================================*/
+.ww-list ul {
+  margin: 15px 0px 10px 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.ww-list ul li {
+  width: 45%;
+  margin: 5px 0px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.ww-list ul li i {
+  margin-right: 8px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color:#273796;
+}
+
+.ww-list ul li span {
+  font-weight: 400;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+.ww-list ul li:hover i {
+  color: #273796;
+}
+
+.fun-facts-card {
+  position: relative;
+  margin-top: 20px;
+  padding: 30px 30px 30px 130px;
+  background-color: var(--whiteColor);
+  -webkit-box-shadow: 0px 0px 10px 0px #eeeeee;
+          box-shadow: 0px 0px 10px 0px #eeeeee;
+}
+
+.fun-facts-card i {
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: var(--backgroundColor);
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.fun-facts-card h2 {
+  margin-bottom: 0px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.fun-facts-card:hover i {
+  color: var(--whiteColor);
+  background-color: #273796;
+}
+
+/*================================================
+Index 01 Pricing Plan Area CSS
+=================================================*/
+.pricing-card {
+  padding: 30px;
+  border-radius: 5px;
+  margin-top: 30px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: var(--whiteColor);
+  -webkit-box-shadow: 0px 0px 20px -5px #eeeeee;
+          box-shadow: 0px 0px 20px -5px #eeeeee;
+}
+
+.pricing-card h4 {
+  margin-bottom: 5px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.pricing-card p {
+  font-size: 14px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.pricing-card ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.pricing-card ul li {
+  margin: 10px 0px 10px 0px;
+  color: var(--paragraphColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.pricing-card ul li i {
+  margin-right: 5px;
+  color: #273796;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.pricing-card ul li span {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+.pricing-card ul .inactive i {
+  color: var(--paragraphColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.pricing-card h2 {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.pricing-card h2 sub {
+  font-size: 14px;
+  font-family: var(--fontFamily2);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: var(--paragraphColor);
+  position: relative;
+  top: -2px;
+}
+
+.pricing-card:hover h4 {
+  color: #273796;
+}
+
+.pricing-card:hover .default-button {
+  color: var(--whiteColor);
+  background-color: #273796;
+}
+
+/*================================================
+Index 01 Team Area CSS
+=================================================*/
+.team-card {
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.team-card .team-card-text {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 101%;
+  max-height: 50%;
+  text-align: center;
+  padding: 35px 15px 20px 15px;
+  background-color: #ebebeb;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 100%, 0% 100%);
+}
+
+.team-card .team-card-text .team-social-icons {
+  opacity: 0;
+  z-index: -1;
+  position: relative;
+  margin-bottom: -50px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.team-card .team-card-text .team-social-icons ul li a {
+  border: 1px solid var(--whiteColor);
+}
+
+.team-card .team-card-text h4 {
+  margin: 10px 0px 5px 0px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  font-size: var(--card-title-fontSize);
+  font-weight: 600;
+}
+
+.team-card .team-card-text p {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.team-card:hover .team-card-text {
+  background-color: #273796;
+}
+
+.team-card:hover .team-card-text .team-social-icons {
+  opacity: 1;
+  z-index: 1;
+  margin-bottom: 0px;
+}
+
+.team-card:hover .team-card-text h4, .team-card:hover .team-card-text p {
+  color: var(--whiteColor);
+}
+
+.social-icons ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.social-icons ul li {
+  display: inline-block;
+  margin: 0px 3px;
+}
+
+.social-icons ul li a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #273796;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: var(--whiteColor);
+}
+
+.social-icons ul li a:hover {
+  color: var(--whiteColor);
+  background-color: #273796;
+}
+
+/*================================================
+Index 01 Testimonial Area CSS
+=================================================*/
+.testimonial-card {
+  position: relative;
+  margin-top: 60px;
+  border: 1px solid var(--whiteColor);
+  padding: 0px 45px 20px 45px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.testimonial-card .bg-shape {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.testimonial-card .testimonial-text {
+  position: relative;
+}
+
+.testimonial-card .testimonial-text img {
+  border-radius: 50%;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  position: relative;
+  margin-top: -40px;
+  margin-bottom: 15px;
+}
+
+.testimonial-card .testimonial-text h4 {
+  margin-bottom: 10px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  font-size: var(--card-title-fontSize);
+  font-weight: 600;
+}
+
+.testimonial-card .testimonial-text h6 {
+  color: var(--paragraphColor);
+  margin-bottom: 12px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.testimonial-card .testimonial-text p {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.testimonial-card:hover {
+  background-color: #273796;
+}
+
+.testimonial-card:hover .testimonial-text h4, .testimonial-card:hover .testimonial-text h6, .testimonial-card:hover .testimonial-text p {
+  color: var(--whiteColor);
+}
+
+.testimonial-slider-area .owl-dots {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.testimonial-slider-area .owl-dots .owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0px 5px;
+  background-color: #c9c9c9 !important;
+}
+
+.testimonial-slider-area .owl-dots .active {
+  background-color: #273796 !important;
+}
+
+/*================================================
+Index 01 Appointment Area CSS
+=================================================*/
+.appointment-content {
+  padding: 50px;
+  margin-top: 40px;
+  -webkit-box-shadow: 0px 0px 10px #eeeeee;
+          box-shadow: 0px 0px 10px #eeeeee;
+}
+
+.appointment-content h4 {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eeeeee;
+  font-size: var(--card-title-fontSize);
+  font-weight: 600;
+}
+
+.appointment-content .form-select {
+  margin-top: 15px;
+  padding: 15px;
+  border-color: #eeeeee;
+  cursor: pointer;
+}
+
+.appointment-content .form-check {
+  margin-top: 8px;
+}
+
+.appointment-content .form-check label {
+  font-size: 14px;
+  font-family: var(--fontFamily2);
+  color: var(--paragraphColor);
+}
+
+.appointment-content .form-check .form-check-input:checked {
+  border-color: #273796 !important;
+  background-color: #273796 !important;
+}
+
+.appointment-content .select-repair {
+  margin-top: 30px;
+}
+
+.appointment-content .select-repair h5 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.appointment-content .select-repair label {
+  font-size: 15px;
+}
+
+.appointment-content .contact-info {
+  margin-top: 30px;
+}
+
+.appointment-content .contact-info .form-control {
+  margin-top: 10px;
+  padding: 15px 15px;
+  border-color: #eeeeee;
+}
+
+.appointment-content .default-button {
+  border: 0px;
+  border-radius: 5px;
+  margin-top: 20px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.appointment-content form {
+  text-align: center;
+}
+
+/*================================================
+Index 01 Blog Area CSS
+=================================================*/
+.blog-card {
+  background-color: var(--whiteColor);
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.blog-card .blog-text-area {
+  padding: 30px;
+}
+
+.blog-card .blog-text-area h6 {
+  color: var(--paragraphColor);
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.blog-card .blog-text-area h6 strong {
+  color: var(--blackColor);
+  margin-right: 7px;
+}
+
+.blog-card .blog-text-area h4 {
+  margin-bottom: 12px;
+  font-size: var(--card-title-fontSize);
+  font-weight: 600;
+}
+
+.blog-card img {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.blog-card .default-button {
+  margin-top: 10px;
+}
+
+.blog-card:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+/*================================================
+Index 02 Banner Area CSS
+=================================================*/
+.home-banner-single-slider {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("../images/banner/banner-2-2.jpg");
+}
+
+.home-banner-single-slider::before {
+  content: '';
+  height: 100%;
+  width: 60%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#000000ee), color-stop(#000000dd), color-stop(#000000cc), to(#ffffff00));
+  background-image: linear-gradient(to right, #000000ee, #000000dd, #000000cc, #ffffff00);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.home-banner .banner-text-area h6 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.home-banner .banner-text-area h1 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.home-banner .banner-text-area p {
+  max-width: 630px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+.home-banner .banner-text-area .default-button {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+/*================================================
+Index 02 About Area CSS
+=================================================*/
+.about-img-area-2 {
+  position: relative;
+}
+
+.about-img-area-2::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid var(--blackColor);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: border-transform-default-two 11s linear infinite alternate forwards;
+          animation: border-transform-default-two 11s linear infinite alternate forwards;
+}
+
+.about-img-area-2 .main-img {
+  border-radius: 50%;
+  -webkit-animation: border-transform-default-two 10s linear infinite alternate forwards;
+          animation: border-transform-default-two 10s linear infinite alternate forwards;
+}
+
+.about-img-area-2 .shape1 {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  -webkit-animation: spin 10s infinite linear forwards;
+          animation: spin 10s infinite linear forwards;
+}
+
+.about-img-area-2 .shape2 {
+  position: absolute;
+  bottom: 25%;
+  left: 10px;
+  -webkit-animation: spin 10s infinite linear forwards;
+          animation: spin 10s infinite linear forwards;
+}
+
+.about-img-area-2 .shape3 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  -webkit-animation: spin 10s infinite linear forwards;
+          animation: spin 10s infinite linear forwards;
+}
+
+.about-img-area-2 .shape4 {
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  -webkit-animation: spin 10s infinite linear forwards;
+          animation: spin 10s infinite linear forwards;
+}
+
+/*================================================
+Index 02 Service Area CSS
+=================================================*/
+.service-card-2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/service/service-card-bg.png");
+  margin: 30px 0px 0px 0px;
+  position: relative;
+}
+
+.service-card-2::before {
+  content: '';
+  width: 80px;
+  height: 80px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: var(--backgroundColor);
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.service-card-2:hover::before {
+  background-color: #273796;
+}
+
+/*================================================
+Index 02 FAQ Area CSS
+=================================================*/
+.faq-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(../images/faq-bg.jpg);
+}
+
+.accordion-item {
+  margin-bottom: 15px;
+}
+
+.accordion-item:last-child {
+  margin-bottom: 0px;
+}
+
+.accordion-item .accordion-button {
+  background-color: #273796;
+  border: 0px;
+  color: var(--whiteColor);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+}
+
+.accordion-item .accordion-button::after {
+  background-image: unset;
+  content: '-';
+  height: unset;
+  width: unset;
+  font-size: 25px;
+  font-weight: 700;
+  padding-left: 5px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.accordion-item .collapsed {
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
+}
+
+.accordion-item .collapsed::after {
+  content: '+';
+}
+
+.accordion-item .accordion-body {
+  border: 0px;
+  background-color: var(--whiteColor);
+  color: var(--paragraphColor);
+  font-size: var(--fontSize);
+}
+
+.accordion-item .accordion-body strong {
+  color: var(--blackColor);
+}
+
+.accordion-item .accordion-collapse {
+  border: 0px;
+}
+
+.faq-list ul {
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.faq-list ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-top: 15px;
+  width: 45%;
+}
+
+.faq-list ul li i {
+  color: #273796;
+  margin-right: 10px;
+}
+
+.faq-list ul li span {
+  font-size: 18px;
+  font-family: var(--fontFamily2);
+}
+
+.faq-list .default-button {
+  margin-top: 25px;
+  border-radius: 5px;
+}
+
+/*================================================
+Index 02 Team Area CSS
+=================================================*/
+.team-card-2 {
+  position: relative;
+  margin-top: 30px;
+}
+
+.team-card-2 .team-card-text {
+  padding: 20px 30px 15px 80px;
+  background-color: var(--whiteColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+.team-card-2 .team-card-text h4 {
+  position: relative;
+  margin-bottom: 5px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  font-size: var(--card-title-fontSize);
+  font-weight: 600;
+}
+
+.team-card-2 .team-card-text h4::before {
+  content: '';
+  width: 50px;
+  height: 2px;
+  background-color: #273796;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.team-card-2 .team-card-text p {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.team-card-2:hover .team-card-text {
+  background-color: #273796;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.team-card-2:hover .team-card-text h4, .team-card-2:hover .team-card-text p {
+  color: var(--whiteColor);
+}
+
+.team-card-2:hover .team-card-text h4::before, .team-card-2:hover .team-card-text p::before {
+  background-color: var(--whiteColor);
+}
+
+/*================================================
+Index 02 Appointment Area CSS
+=================================================*/
+.appointment-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/appointment-bg.jpg");
+  position: relative;
+}
+
+.appointment-bg::before {
+  content: '';
+  width: 65%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#000000ee), color-stop(#000000dd), color-stop(#000000cc), to(#ffffff00));
+  background-image: linear-gradient(to right, #000000ee, #000000dd, #000000cc, #ffffff00);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.appointment-text-area {
+  position: relative;
+}
+
+.appointment-text-area .default-section-title h3 {
+  color: var(--whiteColor);
+}
+
+.appointment-text-area .default-section-title p {
+  color: #cecece;
+}
+
+.appointment-text-area .default-button {
+  margin-top: 35px;
+  border-radius: 5px;
+}
+
+.getting-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.getting-start div {
+  text-align: center;
+}
+
+.getting-start div span {
+  font-size: 60px;
+  display: block;
+  color: #273796;
+  font-weight: 700;
+  font-family: var(--fontFamily);
+}
+
+.getting-start div span:nth-child(2) {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--fontFamily2);
+  color: var(--whiteColor);
+  text-transform: uppercase;
+}
+
+.getting-start::after {
+  content: ':';
+  font-size: 60px;
+  color: #273796;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#getting-started-s::after {
+  display: none;
+}
+
+.appointment-form-2 {
+  padding: 30px;
+  position: relative;
+  border-radius: 5px;
+  background-color: var(--whiteColor);
+}
+
+.appointment-form-2 .form-control {
+  border: 1px solid #eeeeee;
+  padding: 10px 15px;
+}
+
+.appointment-form-2 .form-input-area label {
+  margin-bottom: 5px;
+  font-size: var(--fontSize);
+  color: var(--paragraphColor);
+}
+
+.appointment-form-2 .form-input-area input {
+  margin-bottom: 20px;
+}
+
+.appointment-form-2 .form-input-area input:last-child {
+  margin-bottom: 0px;
+}
+
+.appointment-form-2 .form-check {
+  margin-top: 8px;
+}
+
+.appointment-form-2 .form-check label {
+  font-size: 14px;
+  font-family: var(--fontFamily2);
+  color: var(--paragraphColor);
+}
+
+.appointment-form-2 .form-check .form-check-input:checked {
+  border-color: #273796 !important;
+  background-color: #273796 !important;
+}
+
+.appointment-form-2 .form-check-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.appointment-form-2 .form-check-area .form-check {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.appointment-form-2 .default-button {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 0px;
+}
+
+/*================================================
+Index 02 Blog Area CSS
+=================================================*/
+.blog-card-2 .blog-img {
+  position: relative;
+}
+
+.blog-card-2 .blog-img h6 {
+  font-size: 15px;
+  margin-bottom: 0px;
+  display: inline-block;
+  color: var(--whiteColor);
+  padding: 12px 40px 10px 15px;
+  background-color: #273796;
+  -webkit-clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+}
+
+.blog-card-2 .blog-text-area {
+  padding-top: 40px;
+}
+
+/*================================================
+Index 03 Banner Area CSS
+=================================================*/
+.banner-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/banner/banner-3-bg.jpg");
+}
+
+.banner .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.banner .row .col-md-12 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.banner .banner-text-area {
+  position: relative;
+  max-width: 770px;
+  margin-left: auto;
+}
+
+.banner .banner-text-area h6 {
+  color: var(--blackColor);
+  font-size: 16px;
+}
+
+.banner .banner-text-area h1 {
+  color: var(--blackColor);
+  font-size: 72px;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.banner .banner-text-area p {
+  font-size: var(--fontSize);
+  color: var(--paragraphColor);
+  max-width: 680px;
+}
+
+.banner .banner-text-area .default-button {
+  margin-top: 15px;
+  border: 1px solid #eeeeee00;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner .banner-slider-area {
+  padding: 30px 0px;
+}
+
+.banner .banner-slider-area .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: -139%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.banner .banner-slider-area .owl-nav button {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  font-size: 15px;
+  display: block;
+  border-radius: 50%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: #273796 !important;
+  background-color: var(--whiteColor) !important;
+}
+
+.banner .banner-slider-area .owl-nav button:hover {
+  color: var(--whiteColor) !important;
+  background-color: #273796 !important;
+}
+
+/*================================================
+Index 03 Service Area CSS
+=================================================*/
+.service-content .service-card-2 {
+  margin-bottom: 30px;
+}
+
+/*================================================
+Index 03 Project Area CSS
+=================================================*/
+.project-card {
+  position: relative;
+  margin-top: 30px;
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.project-card .project-card-text {
+  width: 80%;
+  border-radius: 5px;
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  padding: 10px 20px 15px 20px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: var(--whiteColor);
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+.project-card .project-card-text p {
+  font-size: 14px;
+  margin-bottom: 0px;
+  color: var(--paragraphColor);
+}
+
+.project-card .project-card-text h4 {
+  margin-bottom: 0px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.project-card .project-card-text a {
+  font-size: 25px;
+  color: #273796;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.project-card:hover .project-card-text {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+/*================================================
+Index 03 Fun Facts Area CSS
+=================================================*/
+.fun-facts-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/fun-facts-bg.png");
+}
+
+.fun-facts-bg .fun-facts-card {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+/*================================================
+Index 03 Partner Area CSS
+=================================================*/
+.partner-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/brands/brand-bg.jpg");
+}
+
+.partner-slider-area img {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  cursor: -webkit-grab;
+  cursor: grab;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.partner-slider-area img:hover {
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
+}
+
+#custom-search-input {
+  padding: 3px;
+  border: solid 1px #E4E4E4;
+  border-radius: 6px;
+  background-color: #fff;
+  width: 80%;
+  float: right;
+  margin-top: 3px;
+}
+
+#custom-search-input input {
+  border: 0;
+  box-shadow: none;
+  height: 27px;
+}
+
+#custom-search-input button {
+  margin: 2px 0 0 0;
+  background: none;
+  box-shadow: none;
+  border: 0;
+  color: #666666;
+  padding: 0 8px 0 10px;
+  border-left: solid 1px #ccc;
+}
+
+#custom-search-input i {
+  font-size: 20px;
+}
+
+/*================================================
+Uni Banner Area CSS
+=================================================*/
+.uni-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/banner/uni-banner.jpg");
+  position: relative;
+}
+
+.uni-banner::before {
+  content: '';
+  width: 65%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#000000bf), color-stop(#0000009a), to(#00000002));
+  background-image: linear-gradient(to right, #000000bf, #0000009a, #00000002);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.service-banner {
+  background-image: url("../images/banner/un4.jpg");
+}
+
+.blog-banner {
+  background-image: url("../images/banner/un5.jpg");
+}
+
+.blog-banner::before {
+  background-image: -webkit-gradient(linear, left top, right top, from(#000000e5), color-stop(#000000cb), to(#00000000));
+  background-image: linear-gradient(to right, #000000e5, #000000cb, #00000000);
+}
+
+.project-banner {
+  background-image: url("../images/banner/un3.jpg");
+}
+
+.contact-banner {
+  background-image: url("../images/banner/un2.jpg");
+}
+
+.uni-banner-text {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.uni-banner-text h1 {
+  color: var(--whiteColor);
+  margin-bottom: 5px;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.uni-banner-text ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.uni-banner-text ul li {
+  display: inline-block;
+  color: #273796;
+  position: relative;
+  margin-right: 20px;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+.uni-banner-text ul li a {
+  color: var(--whiteColor);
+}
+
+.uni-banner-text ul li::after {
+  content: '/';
+  font-size: 20px;
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.uni-banner-text ul li:last-child::after {
+  display: none;
+}
+
+/*================================================
+Inner about Area CSS
+=================================================*/
+.about-inner-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-inner-img .inner-about-main-img {
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+  z-index: 0;
+  -webkit-animation: brightness-effect 5s infinite linear forwards, top-bottom 5s infinite linear forwards;
+          animation: brightness-effect 5s infinite linear forwards, top-bottom 5s infinite linear forwards;
+}
+
+.about-inner-img .inner-about-shape {
+  position: relative;
+}
+
+/*================================================
+Inner About Why We Section Area CSS
+=================================================*/
+.why-we-inner-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.why-we-inner-img .ww-main-img {
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+  z-index: 0;
+  -webkit-animation: brightness-effect 5s infinite linear forwards, top-bottom 5s infinite linear forwards;
+          animation: brightness-effect 5s infinite linear forwards, top-bottom 5s infinite linear forwards;
+}
+
+.why-we-inner-img .ww-shape {
+  position: relative;
+}
+
+/*================================================
+Pagination Area CSS
+=================================================*/
+.pagination {
+  margin-top: 30px;
+}
+
+.pagination ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.pagination ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.pagination ul li a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #273796;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: var(--fontFamily);
+}
+
+.pagination ul li:hover a {
+  color: var(--whiteColor);
+  background-color: #273796;
+}
+
+.pagination ul .active a {
+  color: var(--whiteColor);
+  background-color: #273796;
+}
+
+/*================================================
+Inner Service  Area CSS
+=================================================*/
+.service-card-4 {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.service-card-4::before {
+  content: '';
+  width: 0%;
+  height: 0%;
+  border-radius: 50%;
+  background-color: #273796;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.service-card-4 .s4-img {
+  position: relative;
+}
+
+.service-card-4 .s4-img .s4-icon-area {
+  position: relative;
+  overflow: hidden;
+  margin-top: -50px;
+  left: 70%;
+  margin-bottom: -20px;
+}
+
+.service-card-4 .s4-img .s4-icon-area i {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  position: relative;
+  z-index: 9;
+  font-size: 40px;
+}
+
+.service-card-4 .s4-img .s4-icon-area img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.service-card-4 .s4-text {
+  padding: 0px 20px 25px 20px;
+  position: relative;
+}
+
+.service-card-4 .s4-text h4 {
+  margin-bottom: 12px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  font-size: var(--card-title-fontSize);
+  font-weight: 600;
+}
+
+.service-card-4 .s4-text p {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.service-card-4 .s4-text .default-button {
+  margin-top: 10px;
+}
+
+.service-card-4:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+.service-card-4:hover .s4-img .s4-icon-area {
+  color: #273796;
+}
+
+.service-card-4:hover .s4-text a, .service-card-4:hover .s4-text p {
+  color: var(--whiteColor);
+}
+
+.service-card-4:hover .s4-text .default-button {
+  border-color: var(--whiteColor);
+  color: var(--whiteColor);
+}
+
+/*================================================
+Inner Team Area CSS
+=================================================*/
+.team-card-4 {
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.team-card-4 .team4-img {
+  border-radius: 50%;
+  position: relative;
+}
+
+.team-card-4 .team4-img img {
+  border-radius: 50%;
+}
+
+.team-card-4 .team4-img::before {
+  content: '';
+  width: 0%;
+  height: 0%;
+  border-radius: 50%;
+  background-color: rgba(231, 13, 61, 0.7);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.team-card-4 .team4-img .team-social-icons {
+  position: absolute;
+  left: -100%;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  text-align: center;
+}
+
+.team-card-4 .team4-img .team-social-icons ul li a {
+  width: 27px;
+  height: 27px;
+  font-size: 15px;
+}
+
+.team-card-4 .team4-text-area {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.team-card-4 .team4-text-area h4 {
+  margin-bottom: 8px;
+  font-size: var(--card-title-fontSize);
+  font-family: var(--fontFamily);
+  font-weight: 600;
+}
+
+.team-card-4 .team4-text-area p {
+  line-height: 1;
+}
+
+.team-card-4:hover .team4-img::before {
+  width: 90%;
+  height: 90%;
+}
+
+.team-card-4:hover .team4-img .team-social-icons {
+  left: 50%;
+}
+
+/*================================================
+Inner FAQ Area CSS
+=================================================*/
+.inner-faq {
+  margin-top: 15px;
+}
+
+.inner-faq .accordion-item {
+  margin-top: 15px;
+}
+
+.inner-faq .accordion-item .collapsed {
+  background-color: #eeeeee;
+  color: var(--blackColor);
+}
+
+.inner-faq .accordion-item .collapsed::after {
+  content: '+';
+}
+
+.inner-faq .accordion-item .accordion-body {
+  border: 0px;
+  background-color: #fef3f5;
+  color: var(--paragraphColor);
+  font-size: var(--fontSize);
+}
+
+.inner-faq .accordion-item .accordion-body strong {
+  color: var(--blackColor);
+}
+
+.inner-faq .accordion-item .accordion-collapse {
+  border: 0px;
+}
+
+/*================================================
+Team Details Page CSS
+=================================================*/
+.team-details-img-area {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.team-details-img-area .shapes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: zoomInOut 8s infinite linear forwards;
+          animation: zoomInOut 8s infinite linear forwards;
+}
+
+.team-details-img-area .main-img {
+  position: relative;
+}
+
+.team-details-text-area h6 {
+  position: relative;
+  padding-left: 35px;
+  color: var(--paragraphColor);
+  font-size: var(--fontSize);
+  font-weight: 400;
+}
+
+.team-details-text-area h6::before {
+  content: '';
+  width: 25px;
+  height: 2px;
+  background-color: #273796;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.team-details-text-area h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: var(--card-title-fontSize);
+  font-weight: 700;
+}
+
+.team-details-text-area .member-intro ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.team-details-text-area .member-intro ul li {
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.team-details-text-area .member-intro ul li span {
+  color: var(--paragraphColor);
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+.team-details-text-area .member-intro ul li span a {
+  color: var(--paragraphColor);
+}
+
+.team-details-text-area .member-intro ul li span:first-child {
+  margin-right: 15px;
+  font-weight: 600;
+  color: var(--blackColor);
+}
+
+.team-details-text-area .team-details-social {
+  margin-top: 15px;
+}
+
+.team-details-text-area .team-details-social ul li {
+  margin-left: 0px;
+}
+
+.team-details-text-area .team-details-social ul li span {
+  font-size: var(--fontSize);
+  font-weight: 600;
+}
+
+.team-details-text-area .team-details-social ul li a {
+  background-color: #eeeeee;
+}
+
+.team-details-text-area .team-details-social ul li a:hover {
+  background-color: #273796;
+}
+
+/*================================================
+Blog Details Page CSS
+=================================================*/
+.blog-details-text-area img {
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.blog-details-text-area h6 {
+  font-size: 14px;
+  margin-top: 15px;
+  color: var(--paragraphColor);
+}
+
+.blog-details-text-area h6 strong {
+  font-weight: 600;
+  margin-right: 10px;
+  color: var(--blackColor);
+}
+
+.blog-details-text-area h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.blog-details-text-area .quoted-area {
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.blog-details-text-area .quoted-area i {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  font-size: 65px;
+  color: #273796;
+  -webkit-animation: top-bottom 4s infinite linear;
+          animation: top-bottom 4s infinite linear;
+}
+
+.blog-details-text-area .quoted-area p {
+  max-width: 91%;
+  font-weight: 500;
+  color: var(--blackColor);
+}
+
+.blog-details-text-area .quoted-area h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.blog-details-text-area .quoted-area p:last-child {
+  font-weight: 400;
+  color: var(--paragraphColor);
+}
+
+.blog-details-text-area .blog-details-text-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.blog-details-text-area .blog-details-text-footer ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.blog-details-text-area .blog-details-text-footer ul li {
+  display: inline-block;
+}
+
+.blog-details-text-area .blog-details-text-footer ul li span {
+  font-weight: 600;
+  margin-right: 10px;
+  padding: 0px !important;
+  background-color: transparent !important;
+}
+
+.blog-details-text-area .blog-details-text-footer .bf-tags {
+  margin-top: 12px;
+}
+
+.blog-details-text-area .blog-details-text-footer .bf-tags ul li {
+  background-color: #fde6eb;
+  padding: 5px 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.blog-details-text-area .blog-details-text-footer .bf-tags ul li:hover {
+  color: var(--whiteColor);
+  background-color: #273796;
+}
+
+.blog-details-text-area .blog-details-text-footer .bf-tags ul li:first-child {
+  background-color: transparent;
+  padding: 0px;
+}
+
+.blog-details-text-area .blog-details-text-footer .social-icons {
+  margin-top: 12px;
+}
+
+.blog-details-text-area .blog-details-text-footer .social-icons ul li a {
+  background-color: #eeeeee;
+}
+
+.blog-details-text-area .blog-details-text-footer .social-icons ul li a:hover {
+  background-color: #273796;
+}
+
+.blog-comment-area {
+  margin-top: 30px;
+}
+
+.blog-comment-area h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.blog-comment-area .input-card {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-comment-area .input-card i {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  color: #273796;
+}
+
+.blog-comment-area .input-card .form-control {
+  padding: 15px 35px 15px 15px;
+  border: 0px;
+  background-color: #f9f9f9;
+}
+
+.blog-comment-area .default-button {
+  border: 0px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.with-sidebar .blog-card {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.with-sidebar .blog-card img {
+  width: 100%;
+}
+
+.with-sidebar .pagination {
+  margin-top: 0px;
+}
+
+/*================================================
+Details Page Sidebar CSS
+=================================================*/
+.sidebar-card {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.sidebar-card h3 {
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.search-box .form-control {
+  background-color: var(--whiteColor);
+  border: 0px;
+  padding: 10px;
+}
+
+.search-box .btn {
+  color: var(--whiteColor);
+  background-color: #273796;
+}
+
+.categories {
+  margin-top: 30px;
+}
+
+.categories ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.categories ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--whiteColor);
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: var(--fontSize);
+  font-weight: 500;
+  font-family: var(--fontFamily);
+}
+
+.categories ul li a span:last-child {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.categories ul li a:hover span:last-child {
+  color: var(--whiteColor);
+  background-color: #273796;
+}
+
+.categories ul li .active span {
+  color: #273796;
+}
+
+.categories ul li .active span:last-child {
+  color: var(--whiteColor);
+  background-color: #273796;
+}
+
+.popular-post {
+  margin-top: 30px;
+}
+
+.popular-post .popular-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.popular-post .popular-card img {
+  margin-right: 15px;
+}
+
+.popular-post .popular-card .popular-text h5 {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.sidebar-tags {
+  margin-top: 30px;
+}
+
+.sidebar-tags ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.sidebar-tags ul li {
+  background-color: #fde6eb;
+  padding: 5px 15px;
+  margin: 5px 3px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.sidebar-tags ul li:hover {
+  color: var(--whiteColor);
+  background-color: #273796;
+}
+
+.customer-service {
+  margin-top: 30px;
+}
+
+.customer-service img {
+  border-radius: 50%;
+  border: 5px solid #273796;
+}
+
+.customer-service .logo-contact {
+  position: relative;
+  padding-left: 55px;
+  margin-top: 20px;
+}
+
+.customer-service .logo-contact i {
+  position: absolute;
+  left: 0;
+  font-size: 45px;
+  color: #273796;
+}
+
+.customer-service .logo-contact h6 {
+  margin-bottom: 0px;
+  color: var(--blackColor);
+  font-size: 18px;
+}
+
+.customer-service .logo-contact p {
+  margin: 0px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.customer-service .logo-contact p a {
+  color: #273796;
+}
+
+.project-info ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.project-info ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--whiteColor);
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: var(--fontSize);
+  font-weight: 500;
+  font-family: var(--fontFamily);
+}
+
+/*================================================
+Service Details Page Sidebar CSS
+=================================================*/
+.service-details-text-area img {
+  margin-bottom: 20px;
+}
+
+.service-details-text-area h3 {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.service-details-text-area .sd-img-area {
+  margin-bottom: 15px;
+}
+
+.service-details-text-area .sd-img-area img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.service-details-text-area ul {
+  margin: 20px 0px 15px 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.service-details-text-area ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+.service-details-text-area ul li i {
+  margin-right: 10px;
+  color: #273796;
+}
+
+/*================================================
+Project Details Page CSS
+=================================================*/
+.more-project .default-section-title h3 {
+  margin-top: -20px;
+}
+
+/*================================================
+Cost Calculation Page CSS
+=================================================*/
+.cost-calculation .appointment-form-2 .form-control {
+  background-color: #f9f9f9;
+  border: 0px;
+}
+
+.cost-calculation .appointment-form-2 .form-input-area {
+  margin-bottom: 15px;
+}
+
+/*================================================
+Contact page CSS
+=================================================*/
+.contact-page-form {
+  padding: 25px 25px 28px 25px;
+  -webkit-box-shadow: 0px 0px 10px -2px #e2e2e2;
+          box-shadow: 0px 0px 10px -2px #e2e2e2;
+}
+
+.contact-page-form h6 {
+  font-size: 15px;
+}
+
+.contact-page-form h4 {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: var(--card-title-fontSize);
+}
+
+.contact-page-form form .form-control {
+  border: 0px;
+  margin-top: 15px;
+  padding: 15px 15px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  font-family: var(--fontFamily2);
+}
+
+.contact-page-form form .form-control::-webkit-input-placeholder {
+  font-size: 14px;
+  font-family: var(--fontFamily2);
+}
+
+.contact-page-form form .form-control:-ms-input-placeholder {
+  font-size: 14px;
+  font-family: var(--fontFamily2);
+}
+
+.contact-page-form form .form-control::-ms-input-placeholder {
+  font-size: 14px;
+  font-family: var(--fontFamily2);
+}
+
+.contact-page-form form .form-control::placeholder {
+  font-size: 14px;
+  font-family: var(--fontFamily2);
+}
+
+.contact-page-form form button {
+  border: 0px;
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+  padding: 10px 15px;
+  color: var(--whiteColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: #273796;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+}
+
+.contact-page-form form button:hover {
+  color: var(--whiteColor);
+  background-color: var(--blackColor);
+}
+
+.contact-text-area h3 {
+  margin-bottom: 10px;
+  font-size: var(--card-title-fontSize);
+  font-weight: 700;
+}
+
+.contact-text-area h5 {
+  font-size: var(--card-title-fontSize);
+  margin-bottom: 10px;
+}
+
+.contact-text-area ul {
+  margin: 15px 0px 20px 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.contact-text-area ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0px;
+  color: var(--paragraphColor);
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+.contact-text-area ul li span:first-child {
+  font-weight: 600;
+  color: var(--blackColor);
+  width: 150px;
+}
+
+.contact-text-area a {
+  font-weight: 600;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily);
+  color: #273796;
+}
+
+.google-map {
+  height: 500px;
+  width: 100%;
+}
+
+.google-map .g-map {
+  width: 100%;
+  height: 100%;
+}
+
+/*================================================
+Error page CSS
+=================================================*/
+.error {
+  text-align: center;
+}
+
+.error .default-button {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.error img {
+  -webkit-animation: top-bottom 5s infinite linear;
+          animation: top-bottom 5s infinite linear;
+}
+
+/*================================================
+Terms a& Conditions page CSS
+=================================================*/
+.terms-content h3 {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.terms-content ul {
+  margin: 10px 0px 25px 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.terms-content ul li {
+  padding-left: 20px;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.terms-content ul li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--whiteColor);
+  -webkit-box-shadow: 0px 0px 0px 3px #273796;
+          box-shadow: 0px 0px 0px 3px #273796;
+  background-color: #273796;
+  position: absolute;
+  left: 3px;
+  top: 9px;
+}
+
+.terms-content ul li span {
+  color: var(--paragraphColor);
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+.terms-content p:last-child {
+  margin-top: -20px;
+}
+
+/*================================================
+Animations CSS
+=================================================*/
+@-webkit-keyframes zoomInOut {
+  0% {
+    -webkit-transform: scale(1) translate(-50%, -50%);
+            transform: scale(1) translate(-50%, -50%);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  50% {
+    -webkit-transform: scale(1.05) translate(-50%, -50%);
+            transform: scale(1.05) translate(-50%, -50%);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  100% {
+    -webkit-transform: scale(1) translate(-50%, -50%);
+            transform: scale(1) translate(-50%, -50%);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+@keyframes zoomInOut {
+  0% {
+    -webkit-transform: scale(1) translate(-50%, -50%);
+            transform: scale(1) translate(-50%, -50%);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  50% {
+    -webkit-transform: scale(1.05) translate(-50%, -50%);
+            transform: scale(1.05) translate(-50%, -50%);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  100% {
+    -webkit-transform: scale(1) translate(-50%, -50%);
+            transform: scale(1) translate(-50%, -50%);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@-webkit-keyframes brightness-effect {
+  0% {
+    -webkit-filter: brightness(0.7);
+            filter: brightness(0.7);
+  }
+  50% {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+  100% {
+    -webkit-filter: brightness(0.7);
+            filter: brightness(0.7);
+  }
+}
+
+@keyframes brightness-effect {
+  0% {
+    -webkit-filter: brightness(0.7);
+            filter: brightness(0.7);
+  }
+  50% {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+  100% {
+    -webkit-filter: brightness(0.7);
+            filter: brightness(0.7);
+  }
+}
+
+@-webkit-keyframes top-bottom {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes top-bottom {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@-webkit-keyframes border-transform-default-two {
+  0%,
+  to {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  28% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  70% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
+
+@keyframes border-transform-default-two {
+  0%,
+  to {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  28% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  70% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

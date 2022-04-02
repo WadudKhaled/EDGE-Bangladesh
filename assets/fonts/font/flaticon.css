@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "flaticon";
+  src: url("flaticon.ttf@e97fcca2806d0b36b501f5bd43af4b42") format("truetype"), url("flaticon.woff@e97fcca2806d0b36b501f5bd43af4b42") format("woff"), url("flaticon.woff2@e97fcca2806d0b36b501f5bd43af4b42") format("woff2"), url("flaticon.eot@e97fcca2806d0b36b501f5bd43af4b42") format("embedded-opentype"), url("flaticon.svg@e97fcca2806d0b36b501f5bd43af4b42") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-phone:before {
+  content: "";
+}
+
+.flaticon-car:before {
+  content: "";
+}
+
+.flaticon-car-repair:before {
+  content: "";
+}
+
+.flaticon-car-1:before {
+  content: "";
+}
+
+.flaticon-vaccum-cleaner:before {
+  content: "";
+}
+
+.flaticon-brush:before {
+  content: "";
+}
+
+.flaticon-car-service:before {
+  content: "";
+}
+
+.flaticon-paper:before {
+  content: "";
+}
+
+.flaticon-technician:before {
+  content: "";
+}
+
+.flaticon-car-repair-1:before {
+  content: "";
+}
+
+.flaticon-customer-service:before {
+  content: "";
+}
+
+.flaticon-customer-service-1:before {
+  content: "";
+}
+
+.flaticon-alarm-clock:before {
+  content: "";
+}
+
+.flaticon-left-quote:before {
+  content: "";
+}
+
+.flaticon-email:before {
+  content: "";
+}
+
+.flaticon-steering-wheel:before {
+  content: "";
+}
+
+.flaticon-car-2:before {
+  content: "";
+}
+
+.flaticon-repair:before {
+  content: "";
+}
+/*# sourceMappingURL=flaticon.css.map */
