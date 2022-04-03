@@ -21,6 +21,7 @@ body {
           box-sizing: border-box;
   background: #f7f7f7;
 }
+
 .owl-prev .fas .fa-chevron-left {
   color: #253897;
 }
@@ -1235,6 +1236,10 @@ Default Section Title Area CSS
 /*================================================
 Index 01 Banner Area CSS
 =================================================*/
+.slider-part {
+  height: 400px;
+  overflow: hidden;
+}
 .slider-part .slider {
   padding-right:0!important;
 }
@@ -1244,11 +1249,55 @@ Index 01 Banner Area CSS
 .key-specials-persons {
   background-color: #233342;
   background-size: cover;
-  padding: 15px 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .biography-area {
-  padding-bottom: 30px;
+    padding-bottom: 16px;
+  }
+
+@media only screen and (max-width: 1164px) {
+  .biography-content h4 {
+    font-size: 13px!important;
+  }
+  .biography-content p {
+    font-size: 12px;
+  }
 }
+@media only screen and (min-width: 800px) and (max-width: 1079px) {
+  .biography-img {
+    margin-right: 10px!important;
+  }
+  .biography-img img {
+    width: 80px!important;
+    height: 80px!important;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 799px) {
+  .biography-img {
+    margin-right: 10px!important;
+  }
+  .biography-img img {
+    width: 77px!important;
+    height: 77px!important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .slider-part {
+    height: 100%;
+    overflow: hidden;
+  }
+  .biography-content {
+    width:0;
+  }
+  .biography-area {
+    margin-left: 35%;
+    margin-top: 19px;
+  }
+}
+
 .biography-img {
   display: inline-block;
   margin-right: 20px;
@@ -1279,6 +1328,7 @@ Index 01 Banner Area CSS
 }
 .biography-content p {
   color: white;
+  line-height: 1.3em;
 }
 .biography-content a {
   color: #008AD1;
@@ -1304,7 +1354,7 @@ Index 01 Banner Area CSS
 
 .main-banner-single-slider .banner-text-area {
   position: relative;
-  padding-top: 343px;
+  padding-top: 287px;
   /* padding-bottom: 50px; */
 }
 
@@ -1337,7 +1387,8 @@ Index 01 Banner Area CSS
 }
 
 .mbs-2 {
-  background-image: url("../images/banner/slider_5f9a9392b801e.jpg");
+    background-image: url(../images/banner/slider_5f9a9392b801e.jpg);
+    background-position: center;
 }
 
 .mbs-3 {
@@ -2032,7 +2083,7 @@ Index 01 Blog Area CSS
 }
 
 .blog-card .blog-text-area {
-  padding: 30px;
+  padding: 10px 20px;
 }
 
 .blog-card .blog-text-area h6 {
@@ -2048,6 +2099,7 @@ Index 01 Blog Area CSS
 }
 
 .blog-card .blog-text-area h4 {
+  font-size: 20px!important;
   margin-bottom: 12px;
   font-size: var(--card-title-fontSize);
   font-weight: 600;
@@ -2057,7 +2109,11 @@ Index 01 Blog Area CSS
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
+.blog-card {
+  height: 526px!important;
+  overflow: hidden;
 
+}
 .blog-card .default-button {
   margin-top: 10px;
 }
