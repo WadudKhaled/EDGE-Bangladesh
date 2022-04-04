@@ -124,10 +124,23 @@ p:last-child {
 }
 
 .bg-fdfdfd {
-  background-image: url('../images/event-bg.jpg');
+  background-image: url('../images/edge_initiative.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
+}
+
+.bg-photo {
+  background-image: url('../images/photo-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-btn a:hover {
+  color: black!important;
 }
 
 .blog-card img {
@@ -1206,7 +1219,7 @@ Default Section Title Area CSS
 }
 
 .default-section-title h3 {
-  color: white;
+  color: black;
   margin-top: 10px;
   margin-bottom: 12px;
   font-size: 40px;
@@ -1545,18 +1558,25 @@ Index 01 About Area CSS
 Index 01 Service Area CSS
 =================================================*/
 .service-card {
-  padding: 30px;
+  padding: 20px 20px;
   margin: 30px 5px;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   -webkit-box-shadow: 0px 0px 20px -5px #eeeeee;
           box-shadow: 0px 0px 20px -5px #eeeeee;
   background-color: white;
+  overflow: hidden;
+}
+
+.service-card-video {
+  height: 299px;
+  background-color: #b0b8dd59;
 }
 
 .service-card .service-card-icon {
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 .service-card .service-card-icon i {
@@ -1581,6 +1601,8 @@ Index 01 Service Area CSS
 
 .service-card .service-card-icon img {
   /* position: absolute; */
+  margin: 0 auto;
+  padding: 0;
   left: 0;
   top: 0;
   width: -webkit-fit-content;
@@ -1600,10 +1622,35 @@ Index 01 Service Area CSS
 }
 
 .service-card h4 {
-  font-size: 20px;
+  font-size: 16px!important;
   font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 12px;
+  margin-top: 12px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.service-card-video h4 {
+  font-size: 14px!important;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.news-photo {
+  padding-left: 20px;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.news-photo img {
+  width: 316px;
+  height: 178px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .service-card .default-button {
@@ -2708,8 +2755,14 @@ Index 03 Project Area CSS
   margin-top: 30px;
 }
 
-.project-card img {
+.project-card-img {
+  width: 340px;
+  height: 190px;
+  overflow: hidden;
+}
+.project-card-img img {
   width: 100%;
+  overflow: hidden;
 }
 
 .project-card .project-card-text {
@@ -2736,7 +2789,7 @@ Index 03 Project Area CSS
 
 .project-card .project-card-text h4 {
   margin-bottom: 0px;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 600;
 }
 
