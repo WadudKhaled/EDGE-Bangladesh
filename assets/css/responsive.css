@@ -33,7 +33,7 @@
     --fontSize: 15px;
   }
   .default-section-title h3 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .section-content {
     margin-top: 0px;
@@ -47,7 +47,7 @@
     padding-bottom: 110px;
   }
   .main-banner-single-slider .banner-text-area h1 {
-    font-size: 30px;
+    font-size: 18px;
   }
   .main-banner-single-slider .banner-text-area .default-button {
     margin-top: 5px;
@@ -401,7 +401,7 @@
     --fontSize: 15px;
   }
   .default-section-title h3 {
-    font-size: 32px;
+    font-size: 22px;
   }
   .section-content {
     margin-top: 0px;
@@ -415,7 +415,7 @@
     padding-bottom: 130px;
   }
   .main-banner-single-slider .banner-text-area h1 {
-    font-size: 38px;
+    font-size: 20px;
   }
   .main-banner-single-slider .banner-text-area .default-button {
     margin-top: 5px;
@@ -595,7 +595,7 @@
     --fontSize: 15px;
   }
   .default-section-title h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
   /*================================================
     Index 01 Banner Area CSS
@@ -605,7 +605,7 @@
     padding-bottom: 100px; */
   }
   .main-banner-single-slider .banner-text-area h1 {
-    font-size: 38px;
+    font-size: 25px;
   }
   .main-banner .owl-nav {
     left: unset;
@@ -712,7 +712,7 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .default-section-title h3 {
-    font-size: 39px;
+    font-size: 30px;
   }
   /*================================================
     Index 01 Banner Area CSS
@@ -722,7 +722,7 @@
     padding-bottom: 150px; */
   }
   .main-banner-single-slider .banner-text-area h1 {
-    font-size: 38px;
+    font-size: 25px;
   }
   .main-banner .owl-nav {
     left: unset;

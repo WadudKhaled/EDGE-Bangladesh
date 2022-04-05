@@ -9,7 +9,7 @@
   --whiteColor: #ffffff;
   --blackColor: #111111;
   --paragraphColor: #777777;
-  --fontSize: 16px;
+  --fontSize: 14px;
   --card-title-fontSize: 24px;
   --transition: 0.5s;
 }
@@ -1250,7 +1250,7 @@ Default Section Title Area CSS
 Index 01 Banner Area CSS
 =================================================*/
 .slider-part {
-  height: 400px;
+  height: 380px;
   overflow: hidden;
 }
 .slider-part .slider {
@@ -1358,8 +1358,8 @@ Index 01 Banner Area CSS
   content: '';
   height: 100%;
   width: 60%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#000000ee), color-stop(#000000dd), color-stop(#000000cc), to(#ffffff00));
-  background-image: linear-gradient(to right, #000000ee, #000000dd, #000000cc, #ffffff00);
+  /* background-image: -webkit-gradient(linear, left top, right top, from(#000000ee), color-stop(#000000dd), color-stop(#000000cc), to(#ffffff00));
+  background-image: linear-gradient(to right, #000000ee, #000000dd, #000000cc, #ffffff00); */
   position: absolute;
   left: 0;
   top: 0;
@@ -1378,10 +1378,15 @@ Index 01 Banner Area CSS
 
 .main-banner-single-slider .banner-text-area h1 {
   color: var(--whiteColor);
-  font-size: 44px;
+  font-size: 30px;
   font-weight: 700;
   margin-top: 12px;
   margin-bottom: 50px;
+}
+
+.banner-text-area h1 {
+  background: #3028289e;
+  padding: 2px 10px;
 }
 
 .main-banner-single-slider .banner-text-area p {
@@ -2146,7 +2151,7 @@ Index 01 Blog Area CSS
 }
 
 .blog-card .blog-text-area h4 {
-  font-size: 20px!important;
+  font-size: 16px!important;
   margin-bottom: 12px;
   font-size: var(--card-title-fontSize);
   font-weight: 600;
