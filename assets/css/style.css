@@ -160,6 +160,10 @@ p:last-child {
 .notice-section .about-text-area p {
   font-size: 12px;
 }
+
+.biography-content p {
+  margin-bottom: 1px!important;
+}
 /*================================================
 Default button Area CSS
 =================================================*/
@@ -1313,7 +1317,7 @@ Index 01 Banner Area CSS
 
 .biography-img {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 13px;
 }
 .biography-img img {
   width: 110px;
@@ -1330,11 +1334,11 @@ Index 01 Banner Area CSS
 .biography-content h4 {
   display: block;
   color: #fff;
-  margin-bottom: 5px;
-  line-height: 30px;
+  margin-bottom: 0px;
+  line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 13px!important;
 }
 .biography-content h4 a {
   color: white;

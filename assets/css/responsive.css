@@ -1,4 +1,44 @@
+@media only screen and (max-width: 767px) and (min-width: 541px) {
+  .biography-area {
+    margin-left: 31%;
+  }
+  .project-card .project-card-text {
+    position: unset;
+    width: 92%;
+  }
+}
+@media only screen and (max-width: 540px) and (min-width: 500px)  {
+  .biography-area {
+    margin-left: 22%;
+  }
+  .project-card .project-card-text {
+    position: unset;
+    width: 92%;
+  }
+}
+@media only screen and (max-width: 499px) and (min-width: 415px)  {
+  .biography-area {
+    margin-left: 15%;
+  }
+  .project-card .project-card-text {
+    position: unset;
+    width: 92%;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .biography-area {
+    margin-left: 0%;
+  }
+  .project-card {
+    margin-top: 56px;
+  }
+  .project-card .project-card-text {
+    position: unset;
+    width: 95%;
+  }
+}
 @media only screen and (max-width: 767px) {
+
   .ptb-100 {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -43,8 +83,7 @@
     =================================================*/
   .main-banner-single-slider .banner-text-area {
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 110px;
+    padding-top: 250px;
   }
   .main-banner-single-slider .banner-text-area h1 {
     font-size: 18px;
@@ -55,7 +94,7 @@
   .main-banner-single-slider::before {
     width: 100%;
     background-image: unset;
-    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(0, 0, 0, 0.7); */
   }
   .main-banner .owl-nav {
     left: 50%;
@@ -411,8 +450,7 @@
     =================================================*/
   .main-banner-single-slider .banner-text-area {
     text-align: center;
-    padding-top: 80px;
-    padding-bottom: 130px;
+    padding-top: 265px;
   }
   .main-banner-single-slider .banner-text-area h1 {
     font-size: 20px;
@@ -423,7 +461,7 @@
   .main-banner-single-slider::before {
     width: 100%;
     background-image: unset;
-    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(0, 0, 0, 0.7); */
   }
   .main-banner .owl-nav {
     left: 50%;
@@ -435,6 +473,9 @@
   }
   .main-banner .owl-nav button {
     display: inline-block;
+  }
+  .biography-area {
+    padding-bottom: 44px;
   }
   /*================================================
     Index 01 About Area CSS
@@ -587,12 +628,25 @@
   .google-map {
     height: 350px;
   }
+  .biography-area {
+    padding-bottom: 44px;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   :root {
     --card-title-fontSize: 22px;
     --fontSize: 15px;
+  }
+  .project-card-img img {
+    padding-right: 34px;
+  }
+  .project-card .project-card-text h4 {
+    font-size: 12px;
+  }
+  .project-card-img {
+    width: 308px;
+    height: 174px;
   }
   .default-section-title h3 {
     font-size: 25px;
