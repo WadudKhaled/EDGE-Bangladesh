@@ -2,39 +2,22 @@
   .biography-area {
     margin-left: 31%;
   }
-  .project-card .project-card-text {
-    position: unset;
-    width: 92%;
-  }
 }
 @media only screen and (max-width: 540px) and (min-width: 500px)  {
   .biography-area {
     margin-left: 22%;
   }
-  .project-card .project-card-text {
-    position: unset;
-    width: 92%;
-  }
+
 }
 @media only screen and (max-width: 499px) and (min-width: 415px)  {
   .biography-area {
     margin-left: 15%;
   }
-  .project-card .project-card-text {
-    position: unset;
-    width: 92%;
-  }
+
 }
 @media only screen and (max-width: 414px) {
   .biography-area {
     margin-left: 0%;
-  }
-  .project-card {
-    margin-top: 56px;
-  }
-  .project-card .project-card-text {
-    position: unset;
-    width: 95%;
   }
 }
 @media only screen and (max-width: 767px) {
