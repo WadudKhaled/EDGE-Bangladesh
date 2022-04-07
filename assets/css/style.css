@@ -20,6 +20,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #f7f7f7;
+  overflow: hidden;
 }
 
 .owl-prev .fas .fa-chevron-left {
@@ -163,6 +164,21 @@ p:last-child {
 
 .biography-content p {
   margin-bottom: 1px!important;
+}
+.photo-title-part {
+  margin-top: 10px;
+}
+
+.photo-list {
+  background: white;
+  padding: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+.photo-title-part h3 {
+  font-size: 16px;
+  color: black;
 }
 /*================================================
 Default button Area CSS
@@ -1409,15 +1425,15 @@ Index 01 Banner Area CSS
 }
 
 .mbs-2 {
-    background-image: url(../images/banner/slider_5f9a9392b801e.jpg);
+    background-image: url(../images/slider_5f9a9392b801e.jpg);
     background-position: center;
 }
 
 .mbs-3 {
-  background-image: url("../images/banner/slider_5f9a9437d6528.jpg");
+  background-image: url("../images/slider_5f9a9437d6528.jpg");
 }
 .mbs-4 {
-  background-image: url("../images/banner/slider_5fd88ad2325e2.jpg");
+  background-image: url("../images/slider_5fd88ad2325e2.jpg");
 }
 
 .main-banner {
@@ -2838,7 +2854,7 @@ Index 03 Fun Facts Area CSS
 /*================================================
 Index 03 Partner Area CSS
 =================================================*/
-.partner-bg {
+/* .partner-bg {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2887,35 +2903,31 @@ Index 03 Partner Area CSS
 
 #custom-search-input i {
   font-size: 20px;
-}
+} */
 
 /*================================================
 Uni Banner Area CSS
 =================================================*/
-.uni-banner {
+.header-banner {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/banner/uni-banner.jpg");
+  background-image: url("../images/pexels-lukas-684314.jpg");
   position: relative;
+  height: 150px;
+}
+.about-details p {
+  color: #000000;
+  padding: 50px 50px;
+  text-align: justify;
 }
 
-.uni-banner::before {
-  content: '';
-  width: 65%;
-  height: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#000000bf), color-stop(#0000009a), to(#00000002));
-  background-image: linear-gradient(to right, #000000bf, #0000009a, #00000002);
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 
 .service-banner {
   background-image: url("../images/banner/un4.jpg");
 }
 
-.blog-banner {
+/* .blog-banner {
   background-image: url("../images/banner/un5.jpg");
 }
 
@@ -2976,7 +2988,7 @@ Uni Banner Area CSS
 
 .uni-banner-text ul li:last-child::after {
   display: none;
-}
+} */
 
 /*================================================
 Inner about Area CSS
@@ -3002,7 +3014,7 @@ Inner about Area CSS
 /*================================================
 Inner About Why We Section Area CSS
 =================================================*/
-.why-we-inner-img {
+/* .why-we-inner-img {
   position: relative;
   overflow: hidden;
 }
@@ -3018,12 +3030,12 @@ Inner About Why We Section Area CSS
 
 .why-we-inner-img .ww-shape {
   position: relative;
-}
+} */
 
 /*================================================
 Pagination Area CSS
 =================================================*/
-.pagination {
+/* .pagination {
   margin-top: 30px;
 }
 
@@ -3065,7 +3077,7 @@ Pagination Area CSS
 .pagination ul .active a {
   color: var(--whiteColor);
   background-color: #273796;
-}
+} */
 
 /*================================================
 Inner Service  Area CSS
@@ -3180,7 +3192,7 @@ Inner Service  Area CSS
 /*================================================
 Inner Team Area CSS
 =================================================*/
-.team-card-4 {
+/* .team-card-4 {
   margin-top: 30px;
   overflow: hidden;
 }
@@ -3253,12 +3265,12 @@ Inner Team Area CSS
 
 .team-card-4:hover .team4-img .team-social-icons {
   left: 50%;
-}
+} */
 
 /*================================================
 Inner FAQ Area CSS
 =================================================*/
-.inner-faq {
+/* .inner-faq {
   margin-top: 15px;
 }
 
@@ -3288,12 +3300,12 @@ Inner FAQ Area CSS
 
 .inner-faq .accordion-item .accordion-collapse {
   border: 0px;
-}
+} */
 
 /*================================================
 Team Details Page CSS
 =================================================*/
-.team-details-img-area {
+/* .team-details-img-area {
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -3391,12 +3403,12 @@ Team Details Page CSS
 
 .team-details-text-area .team-details-social ul li a:hover {
   background-color: #273796;
-}
+} */
 
 /*================================================
 Blog Details Page CSS
 =================================================*/
-.blog-details-text-area img {
+/* .blog-details-text-area img {
   margin-bottom: 15px;
   border-radius: 5px;
 }
@@ -3572,12 +3584,12 @@ Blog Details Page CSS
 
 .with-sidebar .pagination {
   margin-top: 0px;
-}
+} */
 
 /*================================================
 Details Page Sidebar CSS
 =================================================*/
-.sidebar-card {
+/* .sidebar-card {
   background-color: #f9f9f9;
   border-radius: 5px;
   padding: 30px;
@@ -3769,7 +3781,7 @@ Details Page Sidebar CSS
   font-size: var(--fontSize);
   font-weight: 500;
   font-family: var(--fontFamily);
-}
+} */
 
 /*================================================
 Service Details Page Sidebar CSS
@@ -3820,26 +3832,26 @@ Service Details Page Sidebar CSS
 /*================================================
 Project Details Page CSS
 =================================================*/
-.more-project .default-section-title h3 {
+/* .more-project .default-section-title h3 {
   margin-top: -20px;
-}
+} */
 
 /*================================================
 Cost Calculation Page CSS
 =================================================*/
-.cost-calculation .appointment-form-2 .form-control {
+/* .cost-calculation .appointment-form-2 .form-control {
   background-color: #f9f9f9;
   border: 0px;
 }
 
 .cost-calculation .appointment-form-2 .form-input-area {
   margin-bottom: 15px;
-}
+} */
 
 /*================================================
 Contact page CSS
 =================================================*/
-.contact-page-form {
+/* .contact-page-form {
   padding: 25px 25px 28px 25px;
   -webkit-box-shadow: 0px 0px 10px -2px #e2e2e2;
           box-shadow: 0px 0px 10px -2px #e2e2e2;
@@ -3955,12 +3967,12 @@ Contact page CSS
 .google-map .g-map {
   width: 100%;
   height: 100%;
-}
+} */
 
 /*================================================
 Error page CSS
 =================================================*/
-.error {
+/* .error {
   text-align: center;
 }
 
@@ -3972,12 +3984,12 @@ Error page CSS
 .error img {
   -webkit-animation: top-bottom 5s infinite linear;
           animation: top-bottom 5s infinite linear;
-}
+} */
 
 /*================================================
 Terms a& Conditions page CSS
 =================================================*/
-.terms-content h3 {
+/* .terms-content h3 {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 30px;
@@ -4018,7 +4030,9 @@ Terms a& Conditions page CSS
 
 .terms-content p:last-child {
   margin-top: -20px;
-}
+} */
+/*========Videos========*/
+
 
 /*================================================
 Animations CSS
