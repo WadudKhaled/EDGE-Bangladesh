@@ -3035,7 +3035,7 @@ Inner About Why We Section Area CSS
 /*================================================
 Pagination Area CSS
 =================================================*/
-/* .pagination {
+.pagination {
   margin-top: 30px;
 }
 
@@ -3077,7 +3077,7 @@ Pagination Area CSS
 .pagination ul .active a {
   color: var(--whiteColor);
   background-color: #273796;
-} */
+}
 
 /*================================================
 Inner Service  Area CSS
